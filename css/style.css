@@ -12,3 +12,7 @@ body{
     flex-direction: column;
     border:black solid 1px;
 }
+.header{
+    display: flex;
+    background-image: url(..)
+}
