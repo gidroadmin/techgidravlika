@@ -14,5 +14,40 @@ body{
 }
 .header{
     display: flex;
-    background-image: url(..)
+    background-image: url(../img/Header.jpg);
+    height: 136px;
+    width: 100%;
+    background-repeat: no-repeat;
+    justify-content: space-evenly;
+}
+.title{
+    align-self: flex-end;
+    color: white;
+    font-size: 13px;
+    margin-right: 120px;
+    max-width: 400px;
+}
+.search{
+    margin-right: 30px;
+}
+.main-nav a{
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    text-orientation: upright;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main-nav li{
+    
+
+    
+}
+.main-nav a:hover{
+    text-decoration-line: underline;
+}
+.house {
+    list-style-image: url(../img/house.png);
+}
+.email{
+    list-style-image: url(..//img/email_edit.png);
 }
