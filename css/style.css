@@ -37,11 +37,7 @@ body{
     text-orientation: upright;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.main-nav li{
-    
 
-    
-}
 .main-nav a:hover{
     text-decoration-line: underline;
 }
