@@ -1345,7 +1345,7 @@ readers do not read off random characters that represent icons */
   content: "\f019";
     color:#244F93;
   margin-right: 5px;  
-  }
+}
 
 .fa-draft2digital:before {
   content: "\f396"; }
@@ -1432,7 +1432,10 @@ readers do not read off random characters that represent icons */
   content: "\f1d1"; }
 
 .fa-envelope:before {
-  content: "\f0e0"; }
+  content: "\f0e0"; 
+    color:#CC0033;
+  margin-right: 5px; 
+  }
 
 .fa-envelope-open:before {
   content: "\f2b6"; }
@@ -2141,7 +2144,9 @@ readers do not read off random characters that represent icons */
   content: "\f7aa"; }
 
 .fa-home:before {
-  content: "\f015"; }
+  content: "\f015"; 
+  color:#CC0033;
+  margin-right: 5px; }
 
 .fa-hooli:before {
   content: "\f427"; }
@@ -3230,10 +3235,14 @@ readers do not read off random characters that represent icons */
   content: "\f4d7"; }
 
 .fa-rss:before {
-  content: "\f09e"; }
+  content: "\f09e"; 
+        color:#CC0033;
+  margin-right: 5px;}
 
 .fa-rss-square:before {
-  content: "\f143"; }
+  content: "\f143"; 
+        color:#CC0033;
+  margin-right: 5px;}
 
 .fa-ruble-sign:before {
   content: "\f158"; }
@@ -3412,7 +3421,10 @@ readers do not read off random characters that represent icons */
   content: "\f3ee"; }
 
 .fa-sitemap:before {
-  content: "\f0e8"; }
+  content: "\f0e8"; 
+      color:#CC0033;
+  margin-right: 5px;
+  }
 
 .fa-sith:before {
   content: "\f512"; }

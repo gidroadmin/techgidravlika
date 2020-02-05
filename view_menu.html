@@ -13,9 +13,9 @@
 <body>
 	<div class="container">
 		<header class="header">
-            <a href="" class="header__logo">
+            <span class="header__logo">
                 <img src="img/pipeline-access_tech_logo2.png" alt="Гидравлика">
-            </a>       
+            </span>       
             <p class="header__title">
                 Гидравлический расчет трубопроводов представляет собой расчет коэффициента.
             </p>
@@ -97,15 +97,15 @@
             
         </header>
 
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li><a href="info.html" >Главная</a></li>
-                    <li><a href="info.html" >Контакты</a></li>
-                    <li><a href="info.html" >Карта сайта</a></li>
-                    <li><a href="info.html" >Подписаться на RSS</a></li>
-                    <li><a href="li-info.html" >Рассылка по Email</a></li>
-                </ul>
-            </nav>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li><a href="info.html"><span class="fas fa-home"></span>Главная</a></li>
+                <li><a href="info.html"> <span class="fas fa-envelope"></span>Контакты</a></li>
+                <li><a href="info.html"><span class="fas fa-sitemap"></span>Карта сайта</a></li>
+                <li><a href="info.html"><span class="fas fa-rss"></span>Подписаться на RSS</a></li>
+                <li><a href="li-info.html"><span class="fas fa-rss-square"></span>Рассылка по Email</a></li>
+            </ul>
+        </nav>
 
 	
 		<nav class="left-nav">
@@ -194,7 +194,7 @@
               
         </aside>
 
-		<main class="main-view_menu">
+		<main class="main">
             <div class="bread-crumbs">
                 <a href = "#">Гидравлика</a>
                 <img src='img/arrow.png' alt="Гидравлика">
@@ -208,11 +208,13 @@
                             <a href="#">Плотность и удельный вес жидкостей | Плотность воды, масла, спирта, керосина, бензина и нефти</a>
                         </h2>
                         <img src="img/bernulli_mini.jpg" alt="Бернулли" class="article__img">
-                        <div class="article__info">
-                            <p><span class="far fa-calendar-alt fa-1_5x"></span>2008-12-08</p> 
-                            <p><span class="far fa-user fa-1_5x"></span>gidroadmin</p>
-                            <p><span class="far fa-eye fa-1_5x"></span>169857</p>
-                        </div>
+
+                                <ul class="article__info">
+                                        <li><span class="far fa-calendar-plus fa-1_5x"></span>2008-12-08</li>
+                                        <li><span class="far fa-user fa-1_5x"></span>gidroadmin</li>
+                                        <li><span class="far fa-eye fa-1_5x"></span>169857</li>
+                                    </ul>
+
                         <p class="article__text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                 Corporis debitis veniam, rerum necessitatibus placeat similique asperiores dolore
@@ -228,11 +230,13 @@
                                 <a href="#">Давление | Калькулятор давлений</a>
                             </h2>
                             <img src="img/davlenie_mini.jpg" alt="Давление" class="article__img">
-                            <div class="article__info">
-                                <p><span class="far fa-calendar-alt fa-1_5x"></span>2008-12-08</p> 
-                                <p><span class="far fa-user fa-1_5x"></span>gidroadmin</p>
-                                <p><span class="far fa-eye fa-1_5x"></span>169857</p>
-                            </div>
+
+                                    <ul class="article__info">
+                                            <li><span class="far fa-calendar-plus fa-1_5x"></span>2008-12-08</li>
+                                            <li><span class="far fa-user fa-1_5x"></span>gidroadmin</li>
+                                            <li><span class="far fa-eye fa-1_5x"></span>169857</li>
+                                        </ul>
+
                             <p class="article__text">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                     Corporis debitis veniam, rerum necessitatibus placeat similique asperiores dolore
