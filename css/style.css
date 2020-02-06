@@ -525,7 +525,7 @@ a {
     margin: 0;
     
 }
-.article__info p{
+.article__info p
     margin-right: 10px;
 }
 
@@ -1009,7 +1009,7 @@ a {
 @media (max-width: 767px){
     
     body{
-        font-size: 1.05rem;
+        /*font-size: 1.05rem;*/
     }
 
     .main{
