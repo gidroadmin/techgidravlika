@@ -1008,8 +1008,9 @@ a {
 
 @media (max-width: 767px){
     
-    body{
+    body p{
         /*font-size: 1.05rem;*/
+        font-size: 16px;
     }
     p{
         font-size: 16px;
