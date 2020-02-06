@@ -1011,6 +1011,9 @@ a {
     body{
         /*font-size: 1.05rem;*/
     }
+    p{
+        font-size: 16px;
+    }
 
     .main{
         margin-right: 5px;
