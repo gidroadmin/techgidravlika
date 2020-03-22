@@ -288,12 +288,8 @@ readers do not read off random characters that represent icons */
   content: "\f100"; }
 
 .fa-angle-double-right:before {
-<<<<<<< HEAD
   content: "\f101"; 
   margin-top:3px;}
-=======
-  content: "\f101"; }
->>>>>>> bef840ffeade7242cdfb32f9d90570b622ee80e4
 
 .fa-angle-double-up:before {
   content: "\f102"; }
@@ -1058,13 +1054,9 @@ readers do not read off random characters that represent icons */
   content: "\f075"; }
 
 .fa-comment-alt:before {
-<<<<<<< HEAD
   content: "\f27a"; 
   color:#244F93;
   margin-right: 5px;}
-=======
-  content: "\f27a"; }
->>>>>>> bef840ffeade7242cdfb32f9d90570b622ee80e4
 
 .fa-comment-dollar:before {
   content: "\f651"; }
@@ -3036,13 +3028,9 @@ readers do not read off random characters that represent icons */
   content: "\f2ce"; }
 
 .fa-poll:before {
-<<<<<<< HEAD
   content: "\f681";
   color:#244F93;
   margin-right: 5px;}
-=======
-  content: "\f681"; }
->>>>>>> bef840ffeade7242cdfb32f9d90570b622ee80e4
 
 .fa-poll-h:before {
   content: "\f682"; }

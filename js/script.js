@@ -2,25 +2,15 @@ $(document).ready(function(){
 
     $('.header__burger').click(function(event)
     {
-<<<<<<< HEAD
         $('.header__burger, .left-nav, .burger-menu__overlay').toggleClass('active');
         $('body').toggleClass('lock');
     });
 
-=======
-        $('.header__burger, .left-nav').toggleClass('active');
-        $('body').toggleClass('lock');
-    });
-
-    
-    
->>>>>>> bef840ffeade7242cdfb32f9d90570b622ee80e4
 });
 
 $(document).ready(function(){
     $('.header__logo').click(function(event)
         {
-<<<<<<< HEAD
             $('.menu, .burger-menu__overlay-menu').toggleClass('active');
             $('body').toggleClass('lock');
         })
@@ -95,10 +85,4 @@ $(function()
            $('#box').toggle("fast");
         });
     }
-=======
-            $('.menu').toggleClass('active');
-            $('body').toggleClass('lock');
-        })
-
->>>>>>> bef840ffeade7242cdfb32f9d90570b622ee80e4
 });

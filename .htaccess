@@ -1,0 +1,12 @@
+Options -Indexes
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^techgidravlika\.ru
+RewriteRule ^(.*)$ http://www.techgidravlika.ru/$1 [R=permanent,L]
+
+php_value mbstring.language "Russian"
+php_value mbstring.http_input "auto"
+php_value mbstring.http_output "cp1251"
+php_value mbstring.encoding_translation "On"
+
+ErrorDocument 404 http://www.techgidravlika.ru/404.php
