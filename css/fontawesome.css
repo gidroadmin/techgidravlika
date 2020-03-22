@@ -29,9 +29,6 @@
 
 .fa-1x {
   font-size: 1em; }
-  
- .fa-1_5x {
-  font-size: 1.2em; }
 
 .fa-2x {
   font-size: 2em; }
@@ -208,9 +205,7 @@ readers do not read off random characters that represent icons */
   content: "\f641"; }
 
 .fa-address-book:before {
-  content: "\f2b9"; 
-	color:#AC052F;
-  margin-right: 5px;}
+  content: "\f2b9"; }
 
 .fa-address-card:before {
   content: "\f2bb"; }
@@ -288,12 +283,7 @@ readers do not read off random characters that represent icons */
   content: "\f100"; }
 
 .fa-angle-double-right:before {
-<<<<<<< HEAD
-  content: "\f101"; 
-  margin-top:3px;}
-=======
   content: "\f101"; }
->>>>>>> bef840ffeade7242cdfb32f9d90570b622ee80e4
 
 .fa-angle-double-up:before {
   content: "\f102"; }
@@ -602,9 +592,7 @@ readers do not read off random characters that represent icons */
   content: "\f55c"; }
 
 .fa-book:before {
-  content: "\f02d"; 
-  color:#244F93;
-  margin-right: 5px;}
+  content: "\f02d"; }
 
 .fa-book-dead:before {
   content: "\f6b7"; }
@@ -715,9 +703,7 @@ readers do not read off random characters that represent icons */
   content: "\f133"; }
 
 .fa-calendar-alt:before {
-  content: "\f073"; 
-  color:#244F93;
-  margin-right: 5px;}
+  content: "\f073"; }
 
 .fa-calendar-check:before {
   content: "\f274"; }
@@ -729,9 +715,7 @@ readers do not read off random characters that represent icons */
   content: "\f272"; }
 
 .fa-calendar-plus:before {
-  content: "\f271"; 
-        color:#244F93;
-  margin-right: 5px; }
+  content: "\f271"; }
 
 .fa-calendar-times:before {
   content: "\f273"; }
@@ -1058,13 +1042,7 @@ readers do not read off random characters that represent icons */
   content: "\f075"; }
 
 .fa-comment-alt:before {
-<<<<<<< HEAD
-  content: "\f27a"; 
-  color:#244F93;
-  margin-right: 5px;}
-=======
   content: "\f27a"; }
->>>>>>> bef840ffeade7242cdfb32f9d90570b622ee80e4
 
 .fa-comment-dollar:before {
   content: "\f651"; }
@@ -1355,10 +1333,7 @@ readers do not read off random characters that represent icons */
   content: "\f4ba"; }
 
 .fa-download:before {
-  content: "\f019";
-    color:#244F93;
-  margin-right: 5px;  
-}
+  content: "\f019"; }
 
 .fa-draft2digital:before {
   content: "\f396"; }
@@ -1445,10 +1420,7 @@ readers do not read off random characters that represent icons */
   content: "\f1d1"; }
 
 .fa-envelope:before {
-  content: "\f0e0"; 
-    color:#AC052F;
-  margin-right: 5px; 
-  }
+  content: "\f0e0"; }
 
 .fa-envelope-open:before {
   content: "\f2b6"; }
@@ -1517,9 +1489,7 @@ readers do not read off random characters that represent icons */
   content: "\f360"; }
 
 .fa-eye:before {
-  content: "\f06e"; 
-      color:#244F93;
-  margin-right: 5px;}
+  content: "\f06e"; }
 
 .fa-eye-dropper:before {
   content: "\f1fb"; }
@@ -1579,9 +1549,7 @@ readers do not read off random characters that represent icons */
   content: "\f15b"; }
 
 .fa-file-alt:before {
-  content: "\f15c"; 
-    color:#244F93;
-  margin-right: 5px; }
+  content: "\f15c"; }
 
 .fa-file-archive:before {
   content: "\f1c6"; }
@@ -2157,10 +2125,7 @@ readers do not read off random characters that represent icons */
   content: "\f7aa"; }
 
 .fa-home:before {
-  content: "\f015"; 
-  /*color:#CC0033;*/
-  color:#AC052F;
-  margin-right: 5px; }
+  content: "\f015"; }
 
 .fa-hooli:before {
   content: "\f427"; }
@@ -3036,13 +3001,7 @@ readers do not read off random characters that represent icons */
   content: "\f2ce"; }
 
 .fa-poll:before {
-<<<<<<< HEAD
-  content: "\f681";
-  color:#244F93;
-  margin-right: 5px;}
-=======
   content: "\f681"; }
->>>>>>> bef840ffeade7242cdfb32f9d90570b622ee80e4
 
 .fa-poll-h:before {
   content: "\f682"; }
@@ -3255,14 +3214,10 @@ readers do not read off random characters that represent icons */
   content: "\f4d7"; }
 
 .fa-rss:before {
-  content: "\f09e"; 
-	color:#AC052F;
-  margin-right: 5px;}
+  content: "\f09e"; }
 
 .fa-rss-square:before {
-  content: "\f143"; 
-  color:#AC052F;
-  margin-right: 5px;}
+  content: "\f143"; }
 
 .fa-ruble-sign:before {
   content: "\f158"; }
@@ -3307,9 +3262,7 @@ readers do not read off random characters that represent icons */
   content: "\f7c0"; }
 
 .fa-save:before {
-  content: "\f0c7"; 
-      color:#244F93;
-  margin-right: 5px; }
+  content: "\f0c7"; }
 
 .fa-schlix:before {
   content: "\f3ea"; }
@@ -3441,10 +3394,7 @@ readers do not read off random characters that represent icons */
   content: "\f3ee"; }
 
 .fa-sitemap:before {
-  content: "\f0e8"; 
-      color:#AC052F;
-  margin-right: 5px;
-  }
+  content: "\f0e8"; }
 
 .fa-sith:before {
   content: "\f512"; }
@@ -4110,9 +4060,7 @@ readers do not read off random characters that represent icons */
   content: "\f287"; }
 
 .fa-user:before {
-  content: "\f007"; 
-    color:#244F93;
-  margin-right: 5px;}
+  content: "\f007"; }
 
 .fa-user-alt:before {
   content: "\f406"; }
@@ -4136,9 +4084,7 @@ readers do not read off random characters that represent icons */
   content: "\f4fe"; }
 
 .fa-user-edit:before {
-  content: "\f4ff"; 
-      color:#244F93;
-  margin-right: 5px;}
+  content: "\f4ff"; }
 
 .fa-user-friends:before {
   content: "\f500"; }
@@ -4469,36 +4415,3 @@ readers do not read off random characters that represent icons */
   overflow: visible;
   position: static;
   width: auto; }
-@font-face {
-  font-family: 'Font Awesome 5 Brands';
-  font-style: normal;
-  font-weight: normal;
-  font-display: auto;
-  src: url("../webfonts/fa-brands-400.eot");
-  src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
-
-.fab {
-  font-family: 'Font Awesome 5 Brands'; }
-@font-face {
-  font-family: 'Font Awesome 5 Free';
-  font-style: normal;
-  font-weight: 400;
-  font-display: auto;
-  src: url("../webfonts/fa-regular-400.eot");
-  src: url("../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype"), url("../webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
-
-.far {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 400; }
-@font-face {
-  font-family: 'Font Awesome 5 Free';
-  font-style: normal;
-  font-weight: 900;
-  font-display: auto;
-  src: url("../webfonts/fa-solid-900.eot");
-  src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
-
-.fa,
-.fas {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900; }
