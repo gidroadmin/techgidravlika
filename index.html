@@ -1,73 +1,345 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Techgidravlika</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/style.css" rel="stylesheet">
-    <title>Document</title>
+    <link href="css/all.css" rel="stylesheet"> <!--load all styles -->
+    
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <h1 class="title">Гидравлика | Основы гидравлики | Скачать книги по гидравлике | Задачи, статьи, лекции по гидравлике</h1>
-            <nav class="main-nav">
-                <ul>
-                    <li class="house"><a href="#">Главная</a></li>
-                    <li class="email"><a href="#">Контакты</a></li>
-                    <li><a href="#">Карта сайта</a></li>
-                    <li><a href="#">Подписаться на RSS</a></li>
-                    <li><a href="#">Рассылка по Email</a></li>
-                    <li><a href="#">Гостевая книга</a></li>
-                </ul>
+	<div class="container">
+		<header id="header">
+            <span class="header__logo">
+                <img src="img/pipeline-access_tech_logo2.png" alt="Гидравлика">
+                <p>menu</p>
+            </span>
+            <p class="header__title">
+                Гидравлический расчет трубопроводов представляет собой расчет коэффициента.
+            </p>
+            <div class="header__mobile">
+                <div class="header__section">
+                    <div itemscope itemtype="https://schema.org/WebSite" class="header__search">
+                        <meta itemprop="url" content="https://www.techgidravlika.ru"/>
+                        <form itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction" action="" method="get" class="search-wrap">
+                            <meta itemprop="target" content="https://www.techgidravlika.ru/search?q={search_term_string}" />
+                            <input name="s" placeholder="Google поиск..." type="search" autocomplete="off">
+                            <button type="submit">&#128269;</button>
+                        </form>
+                        <div class="social__menu">
+                                <?php
+                                    //Tweeter
+                                    $title = $myrow["title"]; // текст твита
+                                    $url ="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; // ссылка на страницу
+                                    $hashtags = $myrow["meta_k"];
+
+                                    //Facebook
+                                    //$title = 'Привет, мир'; // заголовок
+                                    $summary = 'Короткое описание данной статьи, например можно использовать функцию WordPress the_excerpt()'; // анонс поста
+                                    //$url = 'https://misha.blog?p=1'; // ссылка на пост
+                                    $image_url = 'http://www.techgidravlika.ru/favicon.ico' // URL изображения
+                                    $title = $myrow["title"];
+                                    $description = $myrow["meta_d"];
+                                    //$url = 'https://misha.blog?p=1';
+                                    //$image_url = 'https://misha.blog/wp-content/themes/truemisha/a/apple-touch-icon-144x144-precomposed.png'
+                                ?>
+                            <ul id="box">
+                                <li >
+                                    <a href="http://vkontakte.ru/share.php?url=<?php echo urlencode($url); ?>&title=<?php echo $title; ?>&description=<?php echo $description; ?>&image=<?php echo $image_url; ?>&noparse=true" 
+                                        onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false"
+                                        title="Сохранить в Вконтакте" target="_parent" class="social-button">
+                                        
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" >
+                                            <path d="M393 566c-135 0-208-143-276-285-10-21 6-23 16-23l81-1c12 0 17 9 20 15 13 31 
+                                                    66 142 92 129 18-9 15-107 4-122-7-9-20-12-26-13-5-1 3-11 13-16 18-9 87-9 
+                                                    111-3 28 7 19 32 19 95 0 20-4 50 11 58 24 12 81-101 91-131 3-8 9-11 
+                                                    19-11h85c20 0 27 1 30 8 5 12-9 40-44 87-57 77-65 70-17 114 46 42 55 
+                                                    63 57 66 14 28-11 34-21 34h-76c-9 0-21 0-38-11-29-19-55-70-76-64-17 
+                                                    5-20 34-21 53-1 16-10 21-20 21h-34z" fill = "#244F93">
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://twitter.com/share?text=<?php echo $title; ?>&via=twitterfeed&related=truemisha&hashtags=<?php echo $hashtags ?>&url=<?php echo $url; ?>" title="Поделиться ссылкой в Твиттере" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" target="_parent" class="social-button">
+                                        <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" >
+                                            <path d="M679 239s-21 34-55 57c7 156-107 329-314 329-103 0-169-50-169-50s81 17 163-45c-83-5-103-77-103-77s23 6 
+                                                    50-2c-93-23-89-110-89-110s23 14 50 14c-84-65-34-148-34-148s76 107 228 
+                                                    116c-22-121 117-177 188-101 37-6 71-27 71-27s-12 41-49 61c30-2 63-17 63-17z" fill = "#244F93">
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.facebook.com/sharer.php?s=100&p[url]=<?php echo urlencode( $url ); ?>&p[title]=<?php echo $title ?>&p[summary]=<?php echo $summary ?>&p[images][0]=<?php echo $image_url ?>" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" title="Поделиться ссылкой на Фейсбук" target="_parent" class="social-button">
+                                        <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" width = "30" heigh ="30">
+                                            <path d="M445 643h-90V419h-75v-87h75v-64q0-55 32-86 30-29 80-29 28 0 67 3v78h-47q-42 0-42 38v60h86l-11 87h-75v224z" fill = "#244F93">
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#" id="list" class="social-button vanish" onclick="social()"><span class="fa fa-share-alt fa-1_5x"></span></a>
+                        </div>
+                        
+                    </div>
+                    <div class="header__burger">
+                        <span></span>
+                        
+                    </div>
+                </div>
+                <div class="social__mobile">
+                    <a href="#" class="social-button"><span class="fas fa-home"></span></a>
+                    <a href="#" class="social-button"><span class="fas fa-home"></span></a>
+                    <a href="#" class="social-button"><span class="fas fa-home"></span></a>
+                </div>
+
                 
-            </nav>
-            <div class="search"><p>Поиск по сайту</p>
-                <input name="search" type="text" value="30" maxlength="300" />            
             </div>
         </header>
-        <nav class="nav-left">
-            <ul class="">
-                <li>45454</li>
-                <li>455555555555</li>
-                <li>555555</li>
-                <li>22222222</li>
-                <li>3333333333</li>
+        <nav class="menu">
+            <ul class="menu__list" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+                <li itemprop="name"><a itemprop="url" href="index.html" id="preface"><span class="fas fa-home"></span>Главная</a></li>
+                <li itemprop="name"><a itemprop="url" href="mail.html" id="preface"> <span class="fas fa-envelope"></span>Контакты</a></li>
+                <li itemprop="name"><a itemprop="url" href="prog.html" id="preface"><span class="fas fa-sitemap"></span>Карта сайта</a></li>
+                <li itemprop="name"><a itemprop="url" href="view_book_menu.html"><span class="fas fa-rss"></span>Подписаться на RSS</a></li>
+                <li itemprop="name"><a itemprop="url" href="view_book.html"><span class="fas fa-rss-square"></span>Рассылка по Email</a></li>
+                <li itemprop="name"><a itemprop="url" href="view_post.html"><span class="fas fa-address-book"></span>Гостевая книга</a></li>
             </ul>
         </nav>
-        <main class="main">
+
+	
+		<nav class="left-nav">
+            <div class="burger-menu__overlay" onclick="hideBody()"></div>
+
+
+            <div class="category-wrap top">
+                <p>Лекции и статьи</p>
+                <ul>
+                    <li><a href="" class="burger-menu__link">Интерактивные программы</a></li>
+                    <li><a href="" class="burger-menu__link">Лекции по гидравлике</a></li>
+                    <li><a href="">Статьи по гидравлике</a></li>
+                    <li><a href="">Измерительные приборы</a></li>
+                    <li><a href="">Трубопроводная арматура</a></li>
+                    <li><a href="">Проектирование</a></li>
+                    <li><a href="">Биография гидравликов</a></li>
+                    <li><a href="">Разное</a></li>
+                    <li><a href="">Насосы. Все о насосах</a></li>
+                    <li><a href="">CAD/CAE/CAM программы</a></li>
+                    <li><a href="">Изучение английского языка</a></li>
+                </ul>
+            </div>
+
+            <div class="category-wrap">
+                <p>Скачать книги</p>
+                <ul>
+                    <li><a href="">Гидравлика</a></li>
+                    <li><a href="">Газодинамика</a></li>
+                    <li><a href="">Физика</a></li>
+                    <li><a href="">Математика</a></li>
+                    <li><a href="">Химия</a></li>
+                    <li><a href="">Справочники</a></li>
+                    <li><a href="">Насосы</a></li>
+                    <li><a href="">Метод конечных элементов</a></li>
+                    <li><a href="">Проектирование, ТРИЗ</a></li>
+                    <li><a href="">Теплотехника</a></li>
+                    <li><a href="">Разное</a></li>
+                    <li><a href="">Криогенные системы</a></li>
+                </ul>
+            </div>
+
+            <div class="category-wrap">
+                <p>Видеоуроки</p>
+                <ul>
+                    <li><a href="">Гидравлика</a></li>
+                </ul>
+            </div>
+
+            <div class="category-wrap bottom">
+                <p>Карта сайта</p>
+                <ul>
+                    <li><a href="">Карта сайта</a></li>
+                    <li><a href="">Гостевая книга</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <aside class="left-info">
+            
+            <p class="left-info__zadachnik">Задачи по гидравлике с решениями.
+                <br>Сборник задач.
+                <br>Задачник по гидравлике.
+            </p>
+            <a href="#" class="left-info__download">Скачать бесплатно</a>
+            <img src="img/107_zadach.gif" alt="Сборник задач">
+            <img src="img/zadach_1.jpg" alt="Задачи по гидравлике"> 
+
+            <p class="left-info__zadachnik">Видеоуроки по гидравлике.
+                <br>Просто!
+                <br>Понятно!
+                <br>Доступно!
+            </p>
+            <a href="#" class="left-info__download">Скачать бесплатно</a>
+            <img src="img/videouroki.gif" alt="Задачи по гидравлике">
+            <p class="left-info__zadachnik">Один из лучших справочников по гидравлике.
+                <br>Только простые и понятные формулы!
+            </p>
+            <a href="#" class="left-info__download">Скачать бесплатно</a>
+            <img src="img/vilner_2.png" alt="Задачи по гидравлике">
+            <img src="img/rss.png" alt="Подписаться на RSS">
+            <a href="#" class="left-info__download">Подписаться на RSS</a>
+            <p class="left-info__zadachnik">Подпишитесь на RSS и Вы будете получать информацию об обновлениях сайта на Ваш RSS канал!</p>
+            <div class="email">
+                <img src="img/rss_email.png" width="60">
+                <p>Подписаться на <br>Е-mail рассылку</p>
+            </div>
+                <form style="border:1px solid #ccc;padding:3px;text-align:center;" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#39;http://feedburner.google.com/fb/a/mailverify?uri=techgidravlika&#39;, &#39;popupwindow&#39;, &#39;scrollbars=yes,width=550,height=520&#39;);return true"><p>Введите Ваш Email адрес:</p><p><input type="text" style="width:140px" name="email"></p><input type="hidden" value="techgidravlika" name="uri"><input type="hidden" name="loc" value="ru_RU"><input type="submit" value="Подписаться"></form>
+            <p><a href="http://feeds.feedburner.com/techgidravlika" rel="nofollow"><img src="./Перевод единиц измерений. Конвертор единиц давлений_files/techgidravlika" height="26" width="88" style="border:0" alt=""></a></p>
+              
+        </aside>
+
+		<main class="main">
             <article class="article">
-                <h2>Класная статья</h2>
-                <p class="art">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis quis quisquam id porro repellat. Commodi earum ratione eaque distinctio ipsa consectetur quam delectus nisi atque! Voluptatem distinctio ut necessitatibus dolorum.
+                <h1 class="article__title">Гидравлика. Основы гидравлики.</h1>
+                <p>Гидравлический расчет трубопроводов представляет собой расчет коэффициента гидравлического сопротивления трению трубопровода и потерь давления при движении по трубопроводу жидкости. 
+                    Программа построена на методике изложеной в Справочнике по гидравлическим сопроивлениям под редакцией И.Е.Идельчика.
+                </p>
+                <p>Гидравлический расчет трубопроводов представляет собой расчет коэффициента гидравлического сопротивления трению трубопровода и потерь давления при движении по трубопроводу жидкости. 
+                        Программа построена на методике изложеной в Справочнике по гидравлическим сопроивлениям под редакцией И.Е.Идельчика. 
+                        Гидравлический расчет трубопроводов представляет собой расчет коэффициента гидравлического сопротивления трению трубопровода и потерь давления при движении по трубопроводу жидкости. 
+                        Программа построена на методике изложеной в Справочнике по гидравлическим сопроивлениям под редакцией И.Е.Идельчика.
+                </p>
+                <p>Гидравлический расчет трубопроводов представляет собой расчет коэффициента гидравлического сопротивления трению трубопровода и потерь давления при движении по трубопроводу жидкости. 
+                    Программа построена на методике изложеной в Справочнике по гидравлическим сопроивлениям под редакцией И.Е.Идельчика.
+                </p>
+                <p>Гидравлический расчет трубопроводов представляет собой расчет коэффициента гидравлического сопротивления трению трубопровода и потерь давления при движении по трубопроводу жидкости. 
+                        Программа построена на методике изложеной в Справочнике по гидравлическим сопроивлениям под редакцией И.Е.Идельчика. 
+                        Гидравлический расчет трубопроводов представляет собой расчет коэффициента гидравлического сопротивления трению трубопровода и потерь давления при движении по трубопроводу жидкости. 
+                        Программа построена на методике изложеной в Справочнике по гидравлическим сопроивлениям под редакцией И.Е.Идельчика. Гидравлический расчет трубопроводов представляет собой расчет коэффициента гидравлического сопротивления трению трубопровода и потерь давления при движении по трубопроводу жидкости. 
+                        Программа построена на методике изложеной в Справочнике по гидравлическим сопроивлениям под редакцией И.Е.Идельчика. 
+                        Гидравлический расчет трубопроводов представляет собой расчет коэффициента гидравлического сопротивления трению трубопровода и потерь давления при движении по трубопроводу жидкости. 
+                        Программа построена на методике изложеной в Справочнике по гидравлическим сопроивлениям под редакцией И.Е.Идельчика.
                 </p>
             </article>
             <section class="new">
-                <h3>Новое на сайте</h3>
-            </section>
-            <section class="popular-article">
-                <h4>
-                    Популярные статьи на сайте
-                </h4>
-            </section>
-            <section class="popular-book">
-                <h4>
-                    Популярные книги на сайте
-                </h4>
-            </section>
-            <aside class="rigth">
-                <h5>Реклама Google</h5>
-            </aside>
-            <footer class="footer">
-                <ul>
-                    <li>Главная</li>
-                    <li>Главная 222</li>
-                    <li>Главная 3333</li>
-                    <li>Главная 444</li>
-                </ul>
-                <p class="foot">Ljdlfkjg fgkjlkdfj gfkjlkfjg fgfljglk</p>
-            </footer>
+                <h2 class="new__title">Новое на сайте</h2>
+                    <ul class="new__list">
+                        <li class="new__item"><a href="#">Гидравлические сопротивления | Потери давления на трение</a></li>
+                        <li class="new__item"><a href="#">Как изучить грамматику английского языка?</a></li>
+                        <li class="new__item"><a href="#">Кислород, азот, аргон — безопасность при производстве и применении | Файнштейн В.И. | Скачать книгу</a></li>
+                        <li class="new__item"><a href="#">Холодильные машины и установки | Лашутина Н. Г., Верхова Т. А., Суедов В. П. | Скачать книгу</a></li>
+                    </ul>
+            </section> 
+            
+            <div class="popular"> 
+                <section class="popular__article">
+                    <h3>Популярные статьи на сайте</h3>
+                    <ul>
+                        <li>   
+                            <img src="img/bernulli_mini.jpg" alt="Бернулли">
+                            <a href="#" class="popular-a">Уравнение Бернулли - основное уравнение гидравлики</a>
+                        </li>
+                        <li>   
+                            <img src="img/plotnost_mini.jpg" alt="Плотность">
+                            <a href="#">Плотность и удельный вес жидкостей | Плотность воды, масла, спирта, керосина, бензина и нефти</a>
+                        </li>
+                        <li>   
+                            <img src="img/programm2_mini.jpg" alt="Программа">
+                                <a href="#">Перевод единиц измерений. Конвертер единиц давления</a>
+                            </li>
+                    </ul>
+                </section>
+                <section class="popular__book">
+                    <h3>Популярные книги на сайте</h3>
+                    <ul>
+                        <li>   
+                            <img src="img/bashta.jpg" alt="Белки">
+                            <a href="#">Суточная потребность в белках, жирах и углеводах</a>
+                        </li>
+                        <li>   
+                            <img src="img/zadach_1.jpg" alt="Белки">
+                            <a href="#">Суточная потребность в белках, жирах и углеводах</a>
+                        </li>
+                        <li>   
+                            <img src="img/vilner_2.png" alt="Белки">
+                            <a href="#">Суточная потребность в белках, жирах и углеводах</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
         </main>
+
+        <aside class="aside">
+            <div class="aside__google"><div class="aside__google"><img src="img/Google.jpg" alt="Реклама"></div></div>
+        </aside>
+
+        <footer class="footer">
+            <nav>
+                <ul class="nav-footer">
+                    <li><a href="#">Главная</a> | </li>
+                    <li><a href="#">Контакты</a> | </li>
+                    <li><a href="#">Карта сайта</a> | </li>
+                    <li><a href="#">Подписаться на RSS</a> | </li>
+                    <li><a href="#">Рассылка по Email</a> | </li>
+                    <li><a href="#">Гостевая книга</a></li>
+                </ul>
+            </nav>
+            
+            <!--
+            <div>
+                <a href="" class="social-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width = "30" heigh ="30">
+                        <path d="M393 566c-135 0-208-143-276-285-10-21 6-23 16-23l81-1c12 0 17 9 20 15 13 31 
+                                66 142 92 129 18-9 15-107 4-122-7-9-20-12-26-13-5-1 3-11 13-16 18-9 87-9 
+                                111-3 28 7 19 32 19 95 0 20-4 50 11 58 24 12 81-101 91-131 3-8 9-11 
+                                19-11h85c20 0 27 1 30 8 5 12-9 40-44 87-57 77-65 70-17 114 46 42 55 
+                                63 57 66 14 28-11 34-21 34h-76c-9 0-21 0-38-11-29-19-55-70-76-64-17 
+                                5-20 34-21 53-1 16-10 21-20 21h-34z" fill = "white">
+                    </svg>
+                </a>
+                <a href="" class="social-button">
+                    <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" width = "30" heigh ="30">
+                        <path d="M679 239s-21 34-55 57c7 156-107 329-314 329-103 0-169-50-169-50s81 17 163-45c-83-5-103-77-103-77s23 6 
+                                50-2c-93-23-89-110-89-110s23 14 50 14c-84-65-34-148-34-148s76 107 228 
+                                116c-22-121 117-177 188-101 37-6 71-27 71-27s-12 41-49 61c30-2 63-17 63-17z" fill = "white">
+                    </svg>
+                </a>
+                <a href="" class="social-button">
+                    <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" width = "30" heigh ="30">
+                        <path d="M445 643h-90V419h-75v-87h75v-64q0-55 32-86 30-29 80-29 28 0 67 3v78h-47q-42 0-42 38v60h86l-11 87h-75v224z" fill = "white">
+                    </svg>
+                </a>
+                <a href="" class="social-button">
+                    <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" width = "30" heigh ="30">
+                        <path d="M487 370c21 129-62 237-195 237-114 0-207-93-207-207s93-207 207-207c89 0 138 
+                             54 138 54l-56 54s-29-32-82-32c-71 0-128 59-128 131 0 73 57 131 128 131 81 0 113-58 
+                            117-90H292v-71h195zm189-59v59h59v60h-59v59h-59v-59h-59v-60h59v-59h59z" fill = "white">
+                        </svg>
+                    </a>
+            </div>
+            -->
+
+            <p class="all_rights">&copy;2009-2020 Techgidravlika.ru. При использовании материалов сайта активная ссылка на сайт обязательна!</p>
+        </footer>			
     </div>
+    <!--<script src="js/jquery-3.4.1.js"></script>-->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script>
+//document.body.scrollTop < 20   window.pageYOffset > 1
+        if(document.body.scrollTop < 20)
+        {
+            window.addEventListener('scroll', function()
+            {
+                var x = document.getElementsByClassName("header")[0];
+                x.setAttribute("class","header scroll");
+            });
+        }
+        if (document.body.scrollTop > 20){
+            var x = document.getElementsByClassName("header")[0];
+            x.setAttribute("class","header");
+        }
+</script>		
 </body>
 </html>

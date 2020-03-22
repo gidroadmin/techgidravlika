@@ -1,0 +1,31 @@
+BODY {
+BORDER-TOP-WIDTH: 0px;
+BORDER-LEFT-WIDTH: 0px;
+BORDER-BOTTOM-WIDTH: 0px;
+FONT-FAMILY: verdana,arial,helvetica;
+FONT-SIZE: 12px;
+BACKGROUND-COLOR: #ffffff;
+BORDER-RIGHT-WIDTH: 0px;
+scrollbar-3dlight-color: White;
+scrollbar-arrow-color: #FA9200;
+scrollbar-base-color: White;
+scrollbar-darkshadow-color: White;
+scrollbar-face-color: White;
+scrollbar-highlight-color: #FA9200;
+scrollbar-shadow-color: #FA9200;
+scrollbar-track-color: White;
+left: 0px;
+top: 0px;
+}
+
+TD {BORDER-RIGHT: #666666 0px solid; BORDER-TOP: #666666 0px solid; FONT-WEIGHT: 500; FONT-SIZE: 11px; BORDER-LEFT: #666666 0px solid; COLOR: #000000; BORDER-BOTTOM: #666666 0px solid; TEXT-DECORATION: none}
+IMG {BORDER-RIGHT:0px; BORDER-TOP:0px; BORDER-LEFT:0px; BORDER-BOTTOM:0px}
+
+A:link {COLOR:#CC0000; TEXT-DECORATION:none}
+A:visited {COLOR:#CC0000; TEXT-DECORATION:none}
+A:active {COLOR:#666666; TEXT-DECORATION:none}
+A:hover {COLOR:#666666; TEXT-DECORATION:underline}
+
+
+H3 {font-weight : bold; font-size : 18px;}
+input, textarea {font-family: Verdana; font-size: 12px; text-decoration: none; color: #000000; cursor: default; background-color: #FFFFFF; border-style: solid; border-width: 1px; border-color: #000000;}

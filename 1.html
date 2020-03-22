@@ -1,0 +1,192 @@
+
+<!doctype html>
+<html lang=ru>
+<head>
+    <meta charset=utf-8>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Меню Аккордеон на jQuery - раскрывается при наведении</title>
+    <meta name="description" content="Меню в стиле аккордеон на jQuery - раскрывается при наведении, предыдущая панель при этом закрывается" />
+    <meta name="keywords" content="меню аккордеон, jQuery аккордеон, блок аккордеон, css3, html5, создать аккордеон, вертикальное меню, компактное меню, раскрывается при наведении" />
+<style>
+/*
+ * Вертикальное меню в стиле аккордеон
+ * раскрывается и закрывается при наведении
+ * предыдущая панель при этом закрывается
+ *
+ * Copyright (c) 2014 DBmast.ru (shurawi) 
+ *
+ */
+/* Блок меню Аккордеон */
+.mini-menu {
+    margin: 0px auto;
+    max-width: 220px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow:0 0 8px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow:0 0 8px rgba(0, 0, 0, 0.4);
+    box-shadow:0 0 8px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    font: normal 14px Helvetica, Arial, sans-serif;
+}
+.mini-menu ul {
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+.mini-menu > ul > li {
+    position: relative;
+}
+.mini-menu > ul > li > a {
+    display: block;	
+    padding: .7em 1em;	
+    outline: 0;	
+    border-bottom: 1px solid #222;
+    background: #333;
+    background-image:-webkit-linear-gradient(#444, #333);
+    background-image:-moz-linear-gradient(#444, #333);
+    background-image:-ms-linear-gradient(#444, #333);
+    background-image:linear-gradient(#444, #333);
+    -webkit-box-shadow:inset 0 1px 0 0 rgba(250,250,250,0.1);
+    -moz-box-shadow:inset 0 1px 0 0 rgba(250,250,250,0.1);
+    box-shadow:inset 0 1px 0 0 rgba(250,250,250,0.1);
+    color:#C9C9C9;
+    text-decoration: none;	
+    text-shadow: 1px 1px 3px #111;	
+    font-weight: normal;
+}
+.mini-menu > ul > li > a:hover, 
+.mini-menu > ul > li > a.active {
+    color:#f2bd00;
+}
+.mini-menu .sub  ul {
+    display: none;
+    overflow: hidden;
+    background: #eee;
+    -webkit-box-shadow:inset 0 0 50px #bbb;
+    -moz-box-shadow:inset 0 0 50px #bbb;
+    box-shadow:inset 0 0 50px #bbb;
+}
+.mini-menu .sub ul li a {
+    display: block;
+    padding: .7em 1em;
+    border-bottom: 1px dotted #bababa;
+    color:#514b92;
+    font-size: 12px;
+    text-decoration: none;
+}
+.mini-menu .sub ul li a:hover,
+.mini-menu .sub ul li a.active {
+    padding-left: 1.3em;
+    background: #d8d8d8;
+    color: red;
+}
+.mini-menu .sub ul li a:after{
+    float: left;
+    margin-right:6px;
+    content: "»";
+    line-height: 12px;
+}
+.mini-menu .sub > a:before {
+    content:'•';
+    height:12px;
+    width:12px;
+    font-size: 1em;
+    display:inline-block;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    background: #333;
+    line-height: .8em;
+    color: red;
+    text-indent: 0;
+    text-align: center;
+    text-shadow:none;
+    font-weight: 500;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, .26), 0px 1px 0px 0px rgba(255, 255, 255, .15);
+    -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, .26), 0px 1px 0px 0px rgba(255, 255, 255, .15);
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, .26), 0px 1px 0px 0px rgba(255, 255, 255, .15);
+}
+/* активный переключатель */
+.mini-menu .sub > a.active:before{
+    color: #f2bd00;
+}
+</style>
+</head>
+<body>
+   <div class="mini-menu">
+        <ul>
+            <li>
+                <a href="http://dbmast.ru">Главная</a>
+            </li>
+            <li class="sub">
+                <a href="#">Пункт Меню - 1</a>
+                <ul>
+                   <li><a href="#">Ссылка - 1</a></li>
+                   <li><a href="#">Ссылка - 2</a></li>
+                   <li><a href="#">Ссылка - 3</a></li>
+                   <li><a href="#">Ссылка - 4</a></li>
+                   <li><a href="#">Ссылка - 5</a></li>
+                   <li><a href="#">Ссылка - 6</a></li>
+                   <li><a href="#">Ссылка - 7</a></li>
+                   <li><a href="#">Ссылка - 8</a></li>
+                </ul>
+            </li>
+            <li class="sub">
+                <a href="#">Пункт Меню - 2</a>
+                <ul>
+                   <li><a href="#">Ссылка - 1</a></li>
+                   <li><a href="#">Ссылка - 2</a></li>
+                   <li><a href="#">Ссылка - 3</a></li>
+                   <li><a href="#">Ссылка - 4</a></li>
+                   <li><a href="#">Ссылка - 5</a></li>
+                   <li><a href="#">Ссылка - 6</a></li>
+                   <li><a href="#">Ссылка - 7</a></li>
+                   <li><a href="#">Ссылка - 8</a></li>
+                   <li><a href="#">Ссылка - 9</a></li>
+                </ul>
+            </li>
+            <li class="sub">
+                <a href="#">Пункт Меню - 3</a>
+                <ul>
+                    <li><a href="#">Ссылка - 1</a></li>
+                    <li><a href="#">Ссылка - 2</a></li>
+                    <li><a href="#">Ссылка - 3</a></li>
+                    <li><a href="#">Ссылка - 4</a></li>
+                    <li><a href="#">Ссылка - 5</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Контакты</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Конец Блока Аккордеон -->
+	<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.sub').hover(
+	function(){
+		if ($('> a',this).attr('class') != 'active'){
+			$('.sub ul').slideUp();
+			$('a',this).next().slideToggle();
+			$('.mini-menu > ul > li > a').removeClass('active');
+			$('> a',this).addClass('active');
+		}
+	},
+	function(){
+			$('.sub ul').slideUp();
+			$('.mini-menu > ul > li > a').removeClass('active');
+	});
+    $('.sub ul > li > a').click(function(){
+       $('.sub ul > li > a').removeClass('active');
+       $(this).addClass('active');
+    });
+});
+ </script>
+</body>
+</html>
