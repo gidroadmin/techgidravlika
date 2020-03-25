@@ -33,6 +33,9 @@
  .fa-1_5x {
   font-size: 1.2em; }
 
+  .fa-1_1x {
+    font-size: 1.1em; }
+
 .fa-2x {
   font-size: 2em; }
 
@@ -599,7 +602,7 @@ readers do not read off random characters that represent icons */
 
 .fa-book:before {
   content: "\f02d"; 
-  color:#244F93;
+  color:#AC052F;
   margin-right: 5px;}
 
 .fa-book-dead:before {
@@ -609,7 +612,9 @@ readers do not read off random characters that represent icons */
   content: "\f7e6"; }
 
 .fa-book-open:before {
-  content: "\f518"; }
+  content: "\f518"; 
+  color:#AC052F;
+  margin-right: 5px;}
 
 .fa-book-reader:before {
   content: "\f5da"; }
@@ -1443,7 +1448,8 @@ readers do not read off random characters that represent icons */
   }
 
 .fa-envelope-open:before {
-  content: "\f2b6"; }
+  content: "\f2b6"; 
+  color:rgb(230, 103, 13);}
 
 .fa-envelope-open-text:before {
   content: "\f658"; }
@@ -1645,7 +1651,9 @@ readers do not read off random characters that represent icons */
   content: "\f576"; }
 
 .fa-film:before {
-  content: "\f008"; }
+  content: "\f008"; 
+  color:#AC052F;
+  margin-right: 5px;}
 
 .fa-filter:before {
   content: "\f0b0"; }
@@ -3244,8 +3252,8 @@ readers do not read off random characters that represent icons */
 
 .fa-rss:before {
   content: "\f09e"; 
-	color:#AC052F;
-  margin-right: 5px;}
+	color:rgb(230, 103, 13);
+  }
 
 .fa-rss-square:before {
   content: "\f143"; 
@@ -4225,7 +4233,11 @@ readers do not read off random characters that represent icons */
   content: "\f409"; }
 
 .fa-video:before {
-  content: "\f03d"; }
+  content: "\f03d";
+  color:#AC052F;
+  margin-right: 5px;;
+
+}
 
 .fa-video-slash:before {
   content: "\f4e2"; }
