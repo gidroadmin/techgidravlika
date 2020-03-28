@@ -1336,6 +1336,7 @@ font-weight: 800 !important;
         align-items: center;
         height: 70px;
         z-index: 3;
+        opacity: 1;
     }
 
     .header__section{

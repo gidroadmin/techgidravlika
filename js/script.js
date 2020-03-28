@@ -43,12 +43,12 @@ function hideMenu(){
 //             });
 //         });
 
-
-        window.onscroll = function showHeader() {
-            var header = document.querySelector('.header');
-            var navHeight;
+var navHeight;
             navHeight = $('header').outerHeight(true);
             $('<div class="clone-nav"></div>').insertBefore('header').css('height',navHeight).hide();
+        window.onscroll = function showHeader() {
+            var header = document.querySelector('.header');
+            
             if(window.pageYOffset > 0){
                 header.classList.add('header_fixed');
                 $('.clone-nav').show();
