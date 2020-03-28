@@ -29,34 +29,38 @@ function hideMenu(){
 }
 
 //Header scroll
-// $(document).ready(function(){
-//             //$('#header').removeClass("default");
-                // var navHeight;
-                // navHeight = $('header').outerHeight(true);
-                // $('<div class="clone-nav"></div>').insertBefore('header').css('height',navHeight).hide();
-//             $(window).scroll(function(){
-//                 if($(this).scrollTop() > 50){
-//                     $('#header').addClass("scroll");
-//                 } else {
-//                     $('#header').removeClass("scroll");
-//                 }
-//             });
-//         });
+$(document).ready(function(){
+            //$('#header').removeClass("default");
+                var navHeight;
+                navHeight = $('header').outerHeight(true);
+                $('<div class="clone-nav"></div>').insertBefore('header').css('height',navHeight).hide();
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 0){
+                    $('#header').addClass("header_fixed");
+                    $('.clone-nav').show();
+                } else {
+                    $('#header').removeClass("header_fixed");
+                    $('.clone-nav').hide();
+                }
+            });
+        });
 
-var navHeight;
-            navHeight = $('header').outerHeight(true);
-            $('<div class="clone-nav"></div>').insertBefore('header').css('height',navHeight).hide();
-        window.onscroll = function showHeader() {
-            var header = document.querySelector('.header');
-            
-            if(window.pageYOffset > 0){
-                header.classList.add('header_fixed');
-                $('.clone-nav').show();
-            } else{
-                header.classList.remove('header_fixed');
-                $('.clone-nav').hide();
-            }
-        }        
+
+
+        // window.onscroll = function showHeader() {
+        //     var header = document.querySelector('.header');
+        //     var navHeight;
+        //         navHeight = $('header').outerHeight(true);
+        //         $('<div class="clone-nav"></div>').insertBefore('header').css('height',navHeight).hide();
+        //     if(window.pageYOffset > 0){
+                
+        //         header.classList.add('header_fixed');
+        //         $('.clone-nav').show();
+        //     } else{
+        //         header.classList.remove('header_fixed');
+        //         $('.clone-nav').hide();
+        //     }
+        // }        
 
 $(document).ready(function($){
     var url=document.location.href;
