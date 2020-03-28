@@ -11,9 +11,9 @@
 </head>
 <body>
 	<div class="container">
-		<header id="header">
-            <span class="header__logo">
-                <img src="img/pipeline-access_tech_logo2.png" alt="Гидравлика">
+		<header class="header">
+            <span class="header__logo" itemscope itemtype="http://schema.org/ImageObject">
+                <img src="img/pipeline-access_tech_logo2.png" alt="Гидравлика" itemprop="contentUrl">
                 <!-- <p>menu</p> -->
             </span>
             <p class="header__title">
@@ -142,14 +142,18 @@
         </nav>
 
         <aside class="left-info">
-            
-            <p class="left-info__zadachnik">Задачи по гидравлике с решениями.
-                <br>Сборник задач.
-                <br>Задачник по гидравлике.
-            </p>
-            <a href="#" class="left-info__download">Скачать бесплатно</a>
-            <img src="img/107_zadach.gif" alt="Сборник задач">
-            <img src="img/zadach_1.jpg" alt="Задачи по гидравлике"> 
+            <div itemscope itemtype="http://schema.org/ImageObject" >
+                <p class="left-info__zadachnik"  itemprop="description">Задачи по гидравлике с решениями.
+                    <br>Сборник задач.
+                </p>
+                    <p  class="left-info__zadachnik" itemprop="name">
+                        Задачник по гидравлике.
+                    </p>
+                
+                <a href="#" class="left-info__download" class="left-info__zadachnik">Скачать бесплатно</a><br>
+                <img src="img/107_zadach.gif" alt="Сборник задач" class="left-info__zadachnik">
+                <img src="img/zadach_1.jpg" alt="Задачи по гидравлике" class="left-info__zadachnik" itemprop="contentUrl" /> 
+            </div>
 
             <p class="left-info__zadachnik">Видеоуроки по гидравлике.
                 <br>Просто!
@@ -306,18 +310,18 @@
     
     <script>
 //document.body.scrollTop < 20   window.pageYOffset > 1
-        if(document.body.scrollTop < 20)
-        {
-            window.addEventListener('scroll', function()
-            {
-                var x = document.getElementsByClassName("header")[0];
-                x.setAttribute("class","header scroll");
-            });
-        }
-        if (document.body.scrollTop > 20){
-            var x = document.getElementsByClassName("header")[0];
-            x.setAttribute("class","header");
-        }
+        // if(document.body.scrollTop < 20)
+        // {
+        //     window.addEventListener('scroll', function()
+        //     {
+        //         var x = document.getElementsByClassName("header")[0];
+        //         x.setAttribute("class","header scroll");
+        //     });
+        // }
+        // if (document.body.scrollTop > 20){
+        //     var x = document.getElementsByClassName("header")[0];
+        //     x.setAttribute("class","header");
+        // }
 </script>		
 </body>
 </html>

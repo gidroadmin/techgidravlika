@@ -28,16 +28,35 @@ function hideMenu(){
 	$('body').toggleClass('lock');
 }
 
-$(document).ready(function(){
-            //$('#header').removeClass("default");
-            $(window).scroll(function(){
-                if($(this).scrollTop() > 50){
-                    $('#header').addClass("scroll");
-                } else {
-                    $('#header').removeClass("scroll");
-                }
-            });
-        });
+//Header scroll
+// $(document).ready(function(){
+//             //$('#header').removeClass("default");
+                // var navHeight;
+                // navHeight = $('header').outerHeight(true);
+                // $('<div class="clone-nav"></div>').insertBefore('header').css('height',navHeight).hide();
+//             $(window).scroll(function(){
+//                 if($(this).scrollTop() > 50){
+//                     $('#header').addClass("scroll");
+//                 } else {
+//                     $('#header').removeClass("scroll");
+//                 }
+//             });
+//         });
+
+
+        window.onscroll = function showHeader() {
+            var header = document.querySelector('.header');
+            var navHeight;
+            navHeight = $('header').outerHeight(true);
+            $('<div class="clone-nav"></div>').insertBefore('header').css('height',navHeight).hide();
+            if(window.pageYOffset > 0){
+                header.classList.add('header_fixed');
+                $('.clone-nav').show();
+            } else{
+                header.classList.remove('header_fixed');
+                $('.clone-nav').hide();
+            }
+        }        
 
 $(document).ready(function($){
     var url=document.location.href;
